@@ -1,0 +1,27 @@
+.ms-image-preview {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    position: relative;
+    vertical-align: top;
+}
+
+.ms-image-preview img {
+    vertical-align: middle;
+    max-width: 100px;
+    height: auto;
+}
+
+.ms-remove-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #dc3232;
+    color: #fff;
+    border: none;
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+.ms-remove-image:hover {
+    background: #c00;
+}

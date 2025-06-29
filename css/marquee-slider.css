@@ -1,0 +1,45 @@
+
+.marquee-slider {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+	margin-bottom: 20px;
+}
+
+.marquee-inner {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: marquee var(--animation-duration) linear infinite;
+    will-change: transform;
+}
+
+.marquee-slider[data-direction="right"] .marquee-inner {
+    animation: marquee var(--animation-duration) linear infinite;
+    animation-direction: reverse;
+}
+
+.marquee-image-wrapper {
+    display: inline-flex;
+    flex-shrink: 0;
+    margin: 0 10px;
+	padding: 15px;
+	background: #ffffff;
+	border-radius: 15px;
+}
+
+.marquee-image-wrapper img {
+    width: 38px;
+	height: 38px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
