@@ -1,9 +1,13 @@
-
 .marquee-slider {
     overflow: hidden;
     width: 100%;
     position: relative;
 	margin-bottom: 20px;
+    translate: none;
+    rotate: none;
+    scale: none;
+    transform: translate3d(0.6959%, 0px, 0px) rotate(0.6959deg) rotateY(2.0877deg) rotateX(8.3507deg);
+    opacity: 0.8608;
 }
 
 .marquee-inner {
@@ -11,6 +15,7 @@
     white-space: nowrap;
     animation: marquee var(--animation-duration) linear infinite;
     will-change: transform;
+
 }
 
 .marquee-slider[data-direction="right"] .marquee-inner {
@@ -23,13 +28,18 @@
     flex-shrink: 0;
     margin: 0 10px;
 	padding: 15px;
-	background: #ffffff;
+	background: #CBC5CE;
 	border-radius: 15px;
+}
+.marquee-image-wrapper:hover{
+	background: #8D8C8F;
+    transform: translate(0, 0) rotate(0) skew(0) skewY(0) scaleX(1.1) scaleY(1.1);
+	transition-duration: .3s;
 }
 
 .marquee-image-wrapper img {
     width: 38px;
-	height: 38px;
+	height: 38px !important;
     flex-shrink: 0;
     object-fit: cover;
 }
